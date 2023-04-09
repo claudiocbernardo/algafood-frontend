@@ -3,14 +3,34 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PaginaInicialComponent } from './pagina-inicial/pagina-inicial.component';
+import { FormsModule } from '@angular/forms';
+import { MenubarModule } from 'primeng/menubar';
+import { CozinhaListarComponent } from './cozinha/cozinha-listar/cozinha-listar.component';
+import { RestauranteListarComponent } from './restaurante/restaurante-listar/restaurante-listar.component';
+import { CozinhaBuscarComponent } from './cozinha/cozinha-buscar/cozinha-buscar.component';
+import { FieldsetModule } from 'primeng/fieldset';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { CozinhaIncluirComponent } from './cozinha/cozinha-incluir/cozinha-incluir.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PaginaInicialComponent,
+    CozinhaListarComponent,
+    RestauranteListarComponent,
+    CozinhaBuscarComponent,
+    CozinhaIncluirComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    AppRoutingModule,
+    MenubarModule,
+    FieldsetModule,
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
