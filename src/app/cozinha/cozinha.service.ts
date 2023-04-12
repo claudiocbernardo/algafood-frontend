@@ -10,7 +10,6 @@ import { Cozinha } from '../domain/cozinha';
 })
 export class CozinhaService {
 
-
   private url = 'http://localhost:8080/cozinhas/'
 
   constructor( private http: HttpClient) { }
@@ -19,8 +18,16 @@ export class CozinhaService {
     return this.http.get<Cozinha[]>(this.url);
   }
 
+  buscar(id: number): Observable<any> {
+    return this.http.get(this.url + id);
+  }
+
   incluir(cozinha: Cozinha) : Observable<Cozinha> {
     return this.http.post<Cozinha>(this.url, cozinha);
+  }
+
+  alterar(id: number, cozinha: Cozinha): Observable<Cozinha> {
+    return this.http.put<Cozinha>(this.url + id, cozinha);
   }
 
 }

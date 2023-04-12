@@ -13,6 +13,7 @@ import { FieldsetModule } from 'primeng/fieldset';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { CozinhaIncluirComponent } from './cozinha/cozinha-incluir/cozinha-incluir.component';
+import { CozinhaAlterarComponent } from './cozinha/cozinha-alterar/cozinha-alterar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CozinhaIncluirComponent } from './cozinha/cozinha-incluir/cozinha-inclu
     CozinhaListarComponent,
     RestauranteListarComponent,
     CozinhaBuscarComponent,
-    CozinhaIncluirComponent
+    CozinhaIncluirComponent,
+    CozinhaAlterarComponent
   ],
   imports: [
     BrowserModule,

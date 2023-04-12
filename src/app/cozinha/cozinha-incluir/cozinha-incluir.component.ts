@@ -21,8 +21,8 @@ export class CozinhaIncluirComponent implements OnInit{
   }
 
   incluirCozinha() {
-    this.cozinhaService.incluir(this.cozinha).subscribe(() => {
-      
+    this.cozinhaService.incluir(this.cozinha).subscribe((res: any) => {
+      console.log(res)
     });
   }
 

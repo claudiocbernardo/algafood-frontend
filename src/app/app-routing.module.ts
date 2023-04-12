@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CozinhaListarComponent } from './cozinha/cozinha-listar/cozinha-listar.component';
 import { CozinhaBuscarComponent } from './cozinha/cozinha-buscar/cozinha-buscar.component';
 import { CozinhaIncluirComponent } from './cozinha/cozinha-incluir/cozinha-incluir.component';
+import { CozinhaAlterarComponent } from './cozinha/cozinha-alterar/cozinha-alterar.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'cozinhaIncluir',
     component: CozinhaIncluirComponent
+  },
+  {
+    path: 'cozinhaAlterar',
+    component: CozinhaAlterarComponent
   }
 ];
 

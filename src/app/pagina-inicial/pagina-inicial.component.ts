@@ -6,7 +6,7 @@ import { MenuItem } from 'primeng/api';
   templateUrl: './pagina-inicial.component.html',
   styleUrls: ['./pagina-inicial.component.css']
 })
-export class PaginaInicialComponent implements OnInit{ 
+export class PaginaInicialComponent implements OnInit{
 
   itens: MenuItem[] = [];
 
@@ -34,6 +34,11 @@ export class PaginaInicialComponent implements OnInit{
             label: 'Incluir Cozinha',
             routerLink: 'cozinhaIncluir',
             //icon: 'pi pi-fw pi-video'
+        },
+        {
+            label: 'Alterar Cozinha',
+            routerLink: 'cozinhaAlterar',
+            //icon: 'pi pi-fw pi-video'
         }
         ]
       },
@@ -52,7 +57,7 @@ export class PaginaInicialComponent implements OnInit{
         ]
       },
     ]
-    
+
   }
 
 

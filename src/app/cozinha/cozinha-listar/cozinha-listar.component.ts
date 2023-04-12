@@ -24,11 +24,17 @@ export class CozinhaListarComponent implements OnInit {
   }
 
   carregarListaCozinhas() {
-    this.cozinhaService.listar().subscribe((res: Cozinha[] ) => {
-      this.listaCozinhas = res
+    this.cozinhaService.listar().subscribe((resultado) => {
+      console.log(resultado);
+      if (resultado) {
+        this.listaCozinhas = resultado;
+        console.log(this.listaCozinhas);
+      } else {
+        this.listaCozinhas = [];
+      }
     }),
     (error: any) => {
-      alert("Lista não carregada");
+      alert("Lista de cozinhas não encontrada");
     }
 
     console.log(this.listaCozinhas)
