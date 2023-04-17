@@ -1,3 +1,4 @@
 <p-fieldset legend="Lista de Restaurantes" [toggleable]="true">
-    Aguarde...
+  <span *ngIf="listaRestaurantes.length <= 0">Aguarde...</span>
+  <div *ngFor="let restaurante of listaRestaurantes">{{restaurante.id}} - {{restaurante.nome}}</div>
 </p-fieldset>

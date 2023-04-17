@@ -39,6 +39,11 @@ export class PaginaInicialComponent implements OnInit{
             label: 'Alterar Cozinha',
             routerLink: 'cozinhaAlterar',
             //icon: 'pi pi-fw pi-video'
+        },
+        {
+            label: 'Remover Cozinha',
+            routerLink: 'cozinhaRemover',
+            //icon: 'pi pi-fw pi-video'
         }
         ]
       },
@@ -48,10 +53,12 @@ export class PaginaInicialComponent implements OnInit{
         items: [
           {
             label: 'Buscar Restaurante',
+            routerLink: 'restauranteBuscar',
             //icon: 'pi pi-fw pi-bookmark'
         },
         {
             label: 'Listar Restaurantes',
+            routerLink: 'restauranteListar',
             //icon: 'pi pi-fw pi-video'
         }
         ]

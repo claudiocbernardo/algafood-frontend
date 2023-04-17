@@ -8,11 +8,15 @@ import { Observable } from 'rxjs';
 })
 export class RestauranteService {
 
-  private url = 'http://localhost:8080/restaurantes'
+  private url = 'http://localhost:8080/restaurantes/'
 
   constructor( private http: HttpClient) { }
 
   listar(): Observable<Restaurante[]> {
     return this.http.get<Restaurante[]>(this.url);
+  }
+
+  buscar(id: number): Observable<Restaurante> {
+    return this.http.get(this.url + id);
   }
 }

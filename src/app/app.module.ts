@@ -14,6 +14,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { CozinhaIncluirComponent } from './cozinha/cozinha-incluir/cozinha-incluir.component';
 import { CozinhaAlterarComponent } from './cozinha/cozinha-alterar/cozinha-alterar.component';
+import { CozinhaRemoverComponent } from './cozinha/cozinha-remover/cozinha-remover.component';
+import { RestauranteBuscarComponent } from './restaurante/restaurante-buscar/restaurante-buscar.component';
+import { RestauranteIncluirComponent } from './restaurante/restaurante-incluir/restaurante-incluir.component';
+import { RestauranteAlterarComponent } from './restaurante/restaurante-alterar/restaurante-alterar.component';
+import { RestauranteRemoverComponent } from './restaurante/restaurante-remover/restaurante-remover.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +28,12 @@ import { CozinhaAlterarComponent } from './cozinha/cozinha-alterar/cozinha-alter
     RestauranteListarComponent,
     CozinhaBuscarComponent,
     CozinhaIncluirComponent,
-    CozinhaAlterarComponent
+    CozinhaAlterarComponent,
+    CozinhaRemoverComponent,
+    RestauranteBuscarComponent,
+    RestauranteIncluirComponent,
+    RestauranteAlterarComponent,
+    RestauranteRemoverComponent
   ],
   imports: [
     BrowserModule,

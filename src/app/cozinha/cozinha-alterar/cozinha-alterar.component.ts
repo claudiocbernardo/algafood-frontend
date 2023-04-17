@@ -20,8 +20,8 @@ export class CozinhaAlterarComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.id = 1;
-    this.cozinha.nome = "Argentina";
+    this.id = 2;
+    this.cozinha.nome = "Francesa";
     this.alterarCozinha();
   }
 

@@ -23,11 +23,15 @@ export class CozinhaService {
   }
 
   incluir(cozinha: Cozinha) : Observable<Cozinha> {
-    return this.http.post<Cozinha>(this.url, cozinha);
+    return this.http.post<Cozinha>(this.url , cozinha);
   }
 
   alterar(id: number, cozinha: Cozinha): Observable<Cozinha> {
     return this.http.put<Cozinha>(this.url + id, cozinha);
+  }
+
+  remover(id: number): Observable<Cozinha> {
+    return this.http.delete<Cozinha>(this.url + id);
   }
 
 }
