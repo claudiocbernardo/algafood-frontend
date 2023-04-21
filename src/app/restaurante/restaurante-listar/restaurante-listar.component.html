@@ -1,4 +1,4 @@
 <p-fieldset legend="Lista de Restaurantes" [toggleable]="true">
   <span *ngIf="listaRestaurantes.length <= 0">Aguarde...</span>
-  <div *ngFor="let restaurante of listaRestaurantes">{{restaurante.id}} - {{restaurante.nome}}</div>
+  <div *ngFor="let restaurante of listaRestaurantes">{{restaurante.id}} - {{restaurante.nome}} - {{ restaurante.taxaFrete | currency: 'BRL' }}</div>
 </p-fieldset>

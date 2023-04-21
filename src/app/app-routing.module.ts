@@ -7,6 +7,9 @@ import { CozinhaAlterarComponent } from './cozinha/cozinha-alterar/cozinha-alter
 import { CozinhaRemoverComponent } from './cozinha/cozinha-remover/cozinha-remover.component';
 import { RestauranteBuscarComponent } from './restaurante/restaurante-buscar/restaurante-buscar.component';
 import { RestauranteListarComponent } from './restaurante/restaurante-listar/restaurante-listar.component';
+import { RestauranteIncluirComponent } from './restaurante/restaurante-incluir/restaurante-incluir.component';
+import { RestauranteAlterarComponent } from './restaurante/restaurante-alterar/restaurante-alterar.component';
+import { RestauranteRemoverComponent } from './restaurante/restaurante-remover/restaurante-remover.component';
 
 const routes: Routes = [
   {
@@ -36,6 +39,18 @@ const routes: Routes = [
   {
     path: 'restauranteListar',
     component: RestauranteListarComponent
+  },
+  {
+    path: 'restauranteIncluir',
+    component: RestauranteIncluirComponent
+  },
+  {
+    path: 'restauranteAlterar',
+    component: RestauranteAlterarComponent
+  },
+  {
+    path: 'restauranteExcluir',
+    component: RestauranteRemoverComponent
   },
 ];
 

@@ -19,4 +19,16 @@ export class RestauranteService {
   buscar(id: number): Observable<Restaurante> {
     return this.http.get(this.url + id);
   }
+
+  incluir(restaurante: Restaurante): Observable<Restaurante> {
+    return this.http.post<Restaurante>(this.url, restaurante);
+  }
+
+  alterar(id: number, restaurante: Restaurante): Observable<Restaurante> {
+    return this.http.put<Restaurante>(this.url + id, restaurante);
+  }
+
+  excluir(id: number): Observable<Restaurante> {
+    return this.http.delete(this.url + id);
+  }
 }

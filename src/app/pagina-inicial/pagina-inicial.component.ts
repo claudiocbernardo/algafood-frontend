@@ -41,7 +41,7 @@ export class PaginaInicialComponent implements OnInit{
             //icon: 'pi pi-fw pi-video'
         },
         {
-            label: 'Remover Cozinha',
+            label: 'Excluir Cozinha',
             routerLink: 'cozinhaRemover',
             //icon: 'pi pi-fw pi-video'
         }
@@ -60,7 +60,22 @@ export class PaginaInicialComponent implements OnInit{
             label: 'Listar Restaurantes',
             routerLink: 'restauranteListar',
             //icon: 'pi pi-fw pi-video'
-        }
+        },
+        {
+          label: 'Incluir Restaurante',
+          routerLink: 'restauranteIncluir',
+          //icon: 'pi pi-fw pi-bookmark'
+      },
+      {
+          label: 'Alterar Restaurantes',
+          routerLink: 'restauranteAlterar',
+          //icon: 'pi pi-fw pi-video'
+      },
+      {
+        label: 'Exluir Restaurante',
+        routerLink: 'restauranteExcluir',
+        //icon: 'pi pi-fw pi-video'
+    }
         ]
       },
     ]

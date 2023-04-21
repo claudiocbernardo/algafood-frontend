@@ -1,1 +1,4 @@
-<p>restaurante-incluir works!</p>
+<p-fieldset legend="Alterar Restaurante" [toggleable]="true">
+  <div *ngIf="restaurante.id != undefined">{{restaurante.id}} - {{restaurante.nome}} - {{ restaurante.taxaFrete | currency: 'BRL' }}</div>
+  <div *ngIf="restaurante.id == undefined">Erro ao tentar incluir Restaurante</div>
+</p-fieldset>

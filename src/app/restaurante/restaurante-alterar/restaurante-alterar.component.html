@@ -1,1 +1,3 @@
-<p>restaurante-alterar works!</p>
+<p-fieldset legend="Alterar Restaurante" [toggleable]="true">
+  <div>{{restaurante.id}} - {{restaurante.nome}} - {{ restaurante.taxaFrete | currency: 'BRL' }}</div>
+</p-fieldset>

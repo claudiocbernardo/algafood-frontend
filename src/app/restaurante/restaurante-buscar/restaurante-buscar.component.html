@@ -1,3 +1,3 @@
 <p-fieldset legend="Consulta Restaurante" [toggleable]="true">
-  <div>{{restaurante.id}} - {{restaurante.nome}}</div>
+  <div>{{restaurante.id}} - {{restaurante.nome}} - {{ restaurante.taxaFrete | currency: 'BRL' }}</div>
 </p-fieldset>
